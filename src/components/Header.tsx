@@ -5,12 +5,15 @@ export function Header() {
     return (
         <>
             <div className='navBar'>
-                <img src={logoPrisme} className='logona' alt="logo nacer" />
-                
+                <img src={logoPrisme} className='logoPrisme' alt="logo prisme" />
+                <div className='searchBar'>
+                <input type="text" className='search' placeholder='Rechercher'/>
+                {/* <button className='btnSearch' type='submit'>🔎</button> */}
+                </div>
                 <div className='onglets'>
-                    <a className='btnOnglet'>Accueil</a>
-                    <a className='btnOnglet'>Articles</a>
-                    <a className='btnOnglet'>Contact</a>
+                    <button className='btnOnglet'>Accueil</button>
+                    <button className='btnOnglet'>Articles</button>
+                    <button className='btnOnglet'>Contact</button>
                 </div>
             </div>
 

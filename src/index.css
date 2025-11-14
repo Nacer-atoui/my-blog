@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -15,42 +20,56 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #1a1a1a;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #1a1a1a;
 }
+
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  padding: 0;
+  /* display: flex; */
   min-width: 320px;
   min-height: 100vh;
+  background-color: #fafafa;
+  color: #1a1a1a;
 }
 
-h1 {
+
+
+/* .titleHome {
+  
   font-size: 3.2em;
   line-height: 1.1;
-}
+  padding: 10px;
+  /* border-top: 1px solid black; */
+  /* border-bottom: 1px solid black; */
+  /* box-shadow:  #ebe4e1 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  background-color: #ebe4e1;
+  border-radius: 3px; */
+/* } */ 
 
-button {
+.btnOnglet {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #2C5F7C;
   cursor: pointer;
   transition: border-color 0.25s;
+  color: #fafafa;
 }
-button:hover {
-  border-color: #646cff;
+.btnOnglet:hover {
+  color: #fafafa;
+  background-color: #7BA8A3;
 }
-button:focus,
-button:focus-visible {
+.btnOnglet:focus,
+.btnOnglet:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
@@ -62,7 +81,5 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  button {
-    background-color: #f9f9f9;
-  }
+  
 }
