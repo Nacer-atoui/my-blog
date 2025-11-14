@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "title": "1er article de mon blog",
+        "content": "Voici le contenu du premier article de mon blog, je cherche encore les thèmes que je vais aborder mais ça va etre du lourd...",
+        "image": "imgArticle.png",
+        "createdAt": "new Date()",
+        "isPublished": "false",
+        "likeCount": "0",
+        "categoryName": "React"
+    },
+    {
+        "id": "2",
+        "title": "2ème article de mon blog",
+        "content": "Voici le contenu du premier article de mon blog, je cherche encore les thèmes que je vais aborder mais ça va etre du lourd...",
+        "image": "imgArticle.png",
+        "createdAt": "new Date()",
+        "isPublished": "false",
+        "likeCount": "0",
+        "categoryName": "React"
+    },
+    {
+        "id": "3",
+        "title": "3ème article de mon blog",
+        "content": "Voici le contenu du premier article de mon blog, je cherche encore les thèmes que je vais aborder mais ça va etre du lourd...",
+        "image": "imgArticle.png",
+        "createdAt": "new Date()",
+        "isPublished": "false",
+        "likeCount": "0",
+        "categoryName": "React"
+    },
+    {
+        "id": "4",
+        "title": "4ème article de mon blog",
+        "content": "Voici le contenu du premier article de mon blog, je cherche encore les thèmes que je vais aborder mais ça va etre du lourd...",
+        "image": "imgArticle.png",
+        "createdAt": "new Date()",
+        "isPublished": "false",
+        "likeCount": "0",
+        "categoryName": "React"
+    }
+]

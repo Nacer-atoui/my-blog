@@ -1,0 +1,32 @@
+.articleCard {
+    width: 340px;
+    height: auto;
+    text-align: left;
+    /* border: 1px solid black */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #E8EEF2;
+}
+
+.articleCard:hover {
+    box-shadow: #7BA8A3 0px 5px 15px;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.imgArticle {
+    width: 340px;
+    height: 190px;
+}
+
+.titleCard {
+    font-size: 0.5;
+    margin-top: 0;  
+}
+
+.like {
+    background-color: transparent;
+    border: none;
+}
+
