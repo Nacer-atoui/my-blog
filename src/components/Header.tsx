@@ -1,5 +1,6 @@
 import logoPrisme from '/prisme_logo.svg'
 import './Header.css'
+import { NavLink } from 'react-router-dom'
 
 export function Header() {
     return (
@@ -10,11 +11,12 @@ export function Header() {
                 <input type="text" className='search' placeholder='Rechercher'/>
                 {/* <button className='btnSearch' type='submit'>🔎</button> */}
                 </div>
-                <div className='onglets'>
-                    <button className='btnOnglet'>Accueil</button>
-                    <button className='btnOnglet'>Articles</button>
-                    <button className='btnOnglet'>Contact</button>
-                </div>
+                <nav className='onglets'>
+                    <NavLink to="/HomePage" className='btnOnglet'>Accueil</NavLink>
+                    <NavLink to="/ArticlePage" className='btnOnglet'>Articles</NavLink>
+                    <NavLink to="/About" className='btnOnglet'>À propos</NavLink>
+                    <NavLink to="/Contact0" className='btnOnglet'>Contact</NavLink>
+                </nav>
             </div>
 
         </>
