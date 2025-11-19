@@ -60,7 +60,7 @@ body {
   font-weight: 500;
   font-family: inherit;
   background-color: #2C5F7C;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: border-color 0.25s;
   color: #fafafa;
 }

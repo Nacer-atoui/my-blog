@@ -1,8 +1,5 @@
-// import imgArticle from '/imgArticle.png'
 import './ArticleThumbnail.css'
 import { useState } from 'react'
-
-
 
 export interface Article {
     id: number;
@@ -42,11 +39,3 @@ export function ArticleThumbnail({ title, image, content }: Article) {
     )
 
 }
-
-
-{/* <div key={article.title}>
-                <img src={imgArticle} className='imgArticle' alt="image de l'article une main tenant un telephone" />
-                <h2 className='titleCard'>{article.title}</h2>
-                <p>{article.createdAt.toLocaleDateString()}</p>
-                <p>Likes: {article.likeCount}</p>
-            </div> */}

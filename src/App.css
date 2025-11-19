@@ -1,7 +1,6 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  
 }
 
 .logoPrisme {
@@ -37,4 +36,39 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+  
+}
+
+.titleHome {
+  font-size: 5em;
+  margin-bottom: 50px;
+  color: #2C5F7C;
+}
+
+.homeDiv {
+  /* border: 1px solid black; */
+  box-shadow: #7BA8A3 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 5px;
+  background-color: #E8EEF2;
+  padding: 10px;
+}
+
+.pHome{
+  font-size: large;
+  color: #1A1A1A;
+}
+
+.underTitleHome {
+  margin-bottom: 50px;
+  font-size: 2em;
+  color: #1A1A1A;
 }
