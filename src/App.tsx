@@ -8,7 +8,8 @@ import { ArticleCreatePage } from './pages/ArticleCreatePage.tsx'
 import './App.css'
 import './components/Header.tsx'
 import { Header } from './components/Header.tsx'
-// import { ArticlePage } from './pages/ArticlePage.tsx'
+import { ArticlePage } from './pages/ArticlePage.tsx'
+import ArticlesPage from './pages/ArticlesPage.tsx'
 
 
 function App() {
@@ -18,11 +19,12 @@ function App() {
       <Header />
       {/* <ArticleList /> */}
       <Routes>
-        <Route path="/HomePage" element={<HomePage />} />
-        {/* <Route path="/ArticlePage" element={<ArticlePage />} /> */}
-        <Route path='/ArticleCreatePage' element={<ArticleCreatePage />}/>
-        <Route path='/About' element={<About />} />
-        <Route path='/Contact' element={<Contact />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/articles" element={<ArticlesPage />} />
+        <Route path='/articles/create' element={<ArticleCreatePage />}/>
+        <Route path="/articles/:id" element={<ArticlePage />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
     </>
   )

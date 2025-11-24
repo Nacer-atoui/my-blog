@@ -23,6 +23,7 @@ a {
   color: #1a1a1a;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #1a1a1a;
 }
@@ -46,11 +47,11 @@ body {
   line-height: 1.1;
   padding: 10px;
   /* border-top: 1px solid black; */
-  /* border-bottom: 1px solid black; */
-  /* box-shadow:  #ebe4e1 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+/* border-bottom: 1px solid black; */
+/* box-shadow:  #ebe4e1 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   background-color: #ebe4e1;
   border-radius: 3px; */
-/* } */ 
+/* } */
 
 .btnOnglet {
   border-radius: 8px;
@@ -64,10 +65,12 @@ body {
   transition: border-color 0.25s;
   color: #fafafa;
 }
+
 .btnOnglet:hover {
   color: #fafafa;
   background-color: #7BA8A3;
 }
+
 .btnOnglet:focus,
 .btnOnglet:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -78,8 +81,16 @@ body {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
-  
+
+}
+
+.formNewArticle {}
+
+.newArticle {
+  display: flex;
+  flex-direction: column;
 }
