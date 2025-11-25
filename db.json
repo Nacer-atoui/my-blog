@@ -12,7 +12,7 @@
     },
     {
       "id": "2",
-      "title": "2ème article de mon blog",
+      "title": "2ème test modif article",
       "content": "Voici le contenu du deuxième article de mon blog, je cherche encore les thèmes que je vais aborder mais ça va etre du lourd... c'est suuuuuuuuuur",
       "image": "imgArticle.png",
       "createdAt": "new Date()",

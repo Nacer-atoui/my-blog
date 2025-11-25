@@ -10,6 +10,7 @@ import './components/Header.tsx'
 import { Header } from './components/Header.tsx'
 import { ArticlePage } from './pages/ArticlePage.tsx'
 import ArticlesPage from './pages/ArticlesPage.tsx'
+import UpdateArticlePage from './pages/UpdateArticlePage.tsx'
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/articles" element={<ArticlesPage />} />
         <Route path='/articles/create' element={<ArticleCreatePage />}/>
+        <Route path='/articles/:id/edit' element={<UpdateArticlePage />}/>
         <Route path="/articles/:id" element={<ArticlePage />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />

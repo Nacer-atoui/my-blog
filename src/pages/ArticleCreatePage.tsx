@@ -11,7 +11,7 @@ export function ArticleCreatePage() {
 
     const navigate = useNavigate();
 
-    function handleSubmit(event) {
+    function handleSubmit(event: any) {
         event.preventDefault();
         setIsLoading(true);
         setError(null);
