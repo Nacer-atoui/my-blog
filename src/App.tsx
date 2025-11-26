@@ -8,9 +8,9 @@ import { ArticleCreatePage } from './pages/ArticleCreatePage.tsx'
 import './App.css'
 import './components/Header.tsx'
 import { Header } from './components/Header.tsx'
-import { ArticlePage } from './pages/ArticlePage.tsx'
-import ArticlesPage from './pages/ArticlesPage.tsx'
+import { ArticleDetailPage } from './pages/ArticleDetailPage.tsx'
 import UpdateArticlePage from './pages/UpdateArticlePage.tsx'
+import { ArticleList } from './components/ArticleList.tsx'
 
 
 function App() {
@@ -21,10 +21,10 @@ function App() {
       {/* <ArticleList /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/articles" element={<ArticlesPage />} />
+        <Route path="/articles" element={<ArticleList />} />
         <Route path='/articles/create' element={<ArticleCreatePage />}/>
         <Route path='/articles/:id/edit' element={<UpdateArticlePage />}/>
-        <Route path="/articles/:id" element={<ArticlePage />} />
+        <Route path="/articles/:id" element={<ArticleDetailPage />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>

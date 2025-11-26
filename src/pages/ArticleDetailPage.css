@@ -1,0 +1,47 @@
+.article-card-detail {
+    /* display: flex; */
+    flex-direction: column;
+    text-align: center;
+    padding: 5%;
+    margin: 5%;
+    background-color: #E8EEF2;
+    border-radius: 20px;
+}
+
+.img-article-detail {
+    width: 30%;
+    height: 30%;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.like-btn,
+.edit-btn,
+.delete-btn {
+    width: max-content;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #2C5F7C;
+    /* cursor: pointer; */
+    transition: border-color 0.25s;
+    color: #fafafa;
+    justify-content: center;
+}
+
+.like-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover {
+    color: #fafafa;
+    background-color: #7BA8A3;
+    cursor: pointer;
+}
+
+.btn-div {
+    display: flex;
+    align-items: center;
+}

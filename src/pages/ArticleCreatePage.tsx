@@ -5,11 +5,11 @@ export function ArticleCreatePage() {
     const [newArticle, setNewArticle] = useState({ title: "", content: "", });
     const [error, setError] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
+    const navigate = useNavigate();
 
     if (isLoading) { return <p>Chargement...</p> }  // Affichage lors du chargement
     if (error) return <p>Erreur : {error}</p>; // Affichage si erreur
 
-    const navigate = useNavigate();
 
     function handleSubmit(event: any) {
         event.preventDefault();
@@ -24,7 +24,7 @@ export function ArticleCreatePage() {
         })
             .then((res) => {
                 if (!res.ok) throw new Error("Erreur serveur");
-                return res.json();
+                {return res.json()};
             })
             .then((data) => {
                 console.log("Article crée: ", data);
@@ -35,10 +35,10 @@ export function ArticleCreatePage() {
             .finally(() => setIsLoading(false));
     }
     return (
-        <form onSubmit={handleSubmit}>
+        <form>
             <input type="text" placeholder="Titre" value={newArticle.title} onChange={(e) => setNewArticle({ ...newArticle, title: e.target.value })} />
             <textarea placeholder="Contenu" value={newArticle.content} onChange={(e) => setNewArticle({ ...newArticle, content: e.target.value })}></textarea>
-            <button type="submit">Créer l'article</button>
+            <button onClick={handleSubmit} type="submit">Créer l'article</button>
         </form>
     )
 }

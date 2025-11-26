@@ -38,7 +38,7 @@ export default function UpdateArticlePage() {
     if (!article) return <p>Aucune donnée trouvée.</p>;
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="form-update">
             <input
                 name="title"
                 value={article.title}
@@ -60,7 +60,7 @@ export default function UpdateArticlePage() {
                     setArticle({ ...article, image: e.target.value })
                 }
             />
-            <button type="submit">Editer l'article</button>
+            <button type="submit" className="edit-btn">Editer l'article</button>
         </form>
     );
 }

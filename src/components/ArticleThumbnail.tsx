@@ -36,9 +36,6 @@ export function ArticleThumbnail({ id, title, image, content }: Article) {
                     <p className='date'>{dateObj.toLocaleDateString()}</p>
                     <button className='like' onClick={handleClick}>❤️</button>
                     <p>{nbLike ? 1 : 0}</p>
-                    <Link to={`/articles/${id}/edit`}>
-                    <button className='editBtn'>Editer l'article</button>
-                    </Link>
                 </div>
 
             }
