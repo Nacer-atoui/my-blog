@@ -1,6 +1,7 @@
 import './ArticleThumbnail.css'
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
+import { ArticleDetailPage } from '../pages/ArticleDetailPage';
 
 export interface Article {
     id: number;
@@ -13,7 +14,7 @@ export interface Article {
     categoryName?: string;
 }
 
-export function ArticleThumbnail({ id, title, image }: Article) {
+export function ArticleThumbnail({ id, title, image, content }: Article) {
     const dateObj = new Date();
     const [nbLike, setNbLike] = useState(false);
 
@@ -29,8 +30,9 @@ export function ArticleThumbnail({ id, title, image }: Article) {
                 <div className="articleCard">
                     
                     <Link to={`/articles/${id}`} className='articleLink'>
-                    <h2 className='titleCard'>{title}</h2>
+                    <h2 className='titleCard'>{title.length > 50 ? title.slice(0, 50) + "..." : title}</h2>
                     <img className='imgArticle' src={image} alt="" />
+                    <p className='content-card'>{ content?.slice(0, 100) + "..." } <Link className='see-more' to={`/articles/${id}`}>Voir plus</Link></p>
                     </Link>
                     <p className='date'>{dateObj.toLocaleDateString()}</p>
                     <button className='like' onClick={handleClick}>❤️</button>

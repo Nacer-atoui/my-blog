@@ -41,7 +41,8 @@ export default function UpdateArticlePage() {
     return (
         <>
         <h2 className="title-edit">Modifier l'article</h2>
-        <form onSubmit={handleSubmit} className="form-update">    
+        <form onSubmit={handleSubmit} className="form-update">   
+            <label htmlFor="title">Titre</label> 
             <input
                 className="input-edit"
                 name="title"
@@ -50,6 +51,7 @@ export default function UpdateArticlePage() {
                     setArticle({ ...article, title: e.target.value })
                 }
             />
+            <label htmlFor="content">Contenu de l'article</label>
             <textarea
                 className="input-edit"
                 id="content-edit"
@@ -59,6 +61,7 @@ export default function UpdateArticlePage() {
                     setArticle({ ...article, content: e.target.value })
                 }
             />
+            <label htmlFor="image">URL de l'image</label>
             <input
                 className="input-edit"
                 name="image"

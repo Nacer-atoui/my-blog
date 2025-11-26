@@ -11,7 +11,7 @@ export function ArticleDetailPage() {
     const [error, setError] = useState(null);
     const [nbLike, setNbLike] = useState(false);
     const navigate = useNavigate();
-
+    
     useEffect(() => {
         fetch(`http://localhost:3001/articles/${id}`)
             .then(response => response.json())
@@ -56,7 +56,7 @@ export function ArticleDetailPage() {
             {/* <p className='date'>{articleD.dateObj.toLocaleDateString()}</p> */}
             </div>
             <div className="btn-div">
-                <button className='like-btn' onClick={handleClick}>❤️{nbLike ? 1 : 0}</button>
+                <button className='like-btn' onClick={() => setNbLike(!nbLike)}>❤️{nbLike ? 1 : 0}</button>
                 <p></p>
                 <Link to={`/articles/${id}/edit`}>
                     <button className='edit-btn'>Editer l'article</button>

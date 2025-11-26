@@ -22,11 +22,17 @@
 
 .titleCard {
     font-size: 0.5;
-    margin-top: 0;  
+    margin-top: 0; 
+    margin-bottom: 10%; 
 }
 
 .like {
     background-color: transparent;
     border: none;
+}
+
+.see-more {
+    color: blue;
+    text-decoration: underline;
 }
 
