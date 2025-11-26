@@ -1,44 +1,205 @@
 {
   "articles": [
-    {
-      "id": "1",
-      "title": "1er article de mon blog",
-      "content": "Voici le contenu du premier article de mon blog, je cherche encore les thèmes que je vais aborder mais ça va etre du lourd...",
-      "image": "/imgArticle.png",
-      "createdAt": "new Date()",
-      "isPublished": "false",
-      "likeCount": "0",
-      "categoryName": "React"
-    },
-    {
-      "id": "2",
-      "title": "2ème article",
-      "content": "Voici le contenu du deuxième article de mon blog, je cherche encore les thèmes que je vais aborder mais ça va etre du lourd... c'est suuuuuuuuuur",
-      "image": "/imgArticle.png",
-      "createdAt": "new Date()",
-      "isPublished": "false",
-      "likeCount": "0",
-      "categoryName": "React"
-    },
-    {
-      "id": "3",
-      "title": "3ème article de mon blog",
-      "content": "Voici le contenu du troisième article de mon blog, je cherche encore les thèmes que je vais aborder mais ça va etre du lourd...",
-      "image": "/imgArticle.png",
-      "createdAt": "new Date()",
-      "isPublished": "false",
-      "likeCount": "0",
-      "categoryName": "React"
-    },
-    {
-      "id": "4",
-      "title": "4ème article de mon blogggg",
-      "content": "Voici le contenu du quatrième article de mon blog, je cherche encore les thèmes que je vais aborder mais ça va etre du lourd...",
-      "image": "/imgArticle.png",
-      "createdAt": "new Date()",
-      "isPublished": "false",
-      "likeCount": "0",
-      "categoryName": "React"
-    }
-  ]
+  {
+    "id": 1,
+    "title": "Record de chaleur en Europe : le réchauffement sous un nouveau prisme",
+    "content": "Le 12 novembre 2025, plusieurs villes européennes ont battu des records de température pour un mois de novembre. Les climatologues soulignent que ces anomalies se multiplient, posant la question de l’urgence climatique. Certains y voient un avertissement clair. D’autres appellent à une adaptation immédiate des infrastructures.\n\nTandis que les habitants relèvent les volets pour éviter la chaleur, les gouvernements locaux réévaluent leurs plans de prévention. Les associations écologistes demandent une accélération de la transition énergétique, tandis que l’industrie continue de naviguer entre contraintes et défis économiques.",
+    "image": "https://picsum.photos/800/400?random=1",
+    "createdAt": "2025-11-12T08:34:00Z",
+    "isPublished": true,
+    "likeCount": 124,
+    "categoryName": "Climat"
+  },
+  {
+    "id": 2,
+    "title": "Débat sur l’intelligence artificielle : opportunité ou menace pour l’emploi ?",
+    "content": "À l’occasion d’un colloque tenu à Paris le 5 novembre, économistes et experts tech ont débattu des effets de l’intelligence artificielle sur le marché du travail. Pour certains, l’IA ouvre de nouvelles opportunités et crée des secteurs entiers. Pour d’autres, elle menace des emplois traditionnels, surtout ceux peu qualifiés.\n\nDes voix réclament un renforcement de la formation continue et des mécanismes de reconversion. D’autres préconisent un revenu universel pour amortir les chocs. Le débat reste ouvert, et les perceptions varient selon les pays et les secteurs.",
+    "image": "https://picsum.photos/800/400?random=2",
+    "createdAt": "2025-11-05T14:20:00Z",
+    "isPublished": true,
+    "likeCount": 89,
+    "categoryName": "Technologie"
+  },
+  {
+    "id": 3,
+    "title": "La crise du logement secoue les grandes villes françaises",
+    "content": "Depuis octobre 2025, plusieurs associations alertent sur l’aggravation de la crise du logement. À Lyon, Paris ou Marseille, les loyers continuent d’augmenter, tandis que l’offre reste insuffisante pour les ménages modestes. Le phénomène touche particulièrement les jeunes actifs et les familles monoparentales.\n\nFace à cela, des collectifs réclament la construction massive de logements sociaux et la régulation des loyers. Certains habitants commencent à quitter les centres-villes, ce qui entraîne des débats sur la mixité sociale et l’avenir des quartiers populaires.",
+    "image": "https://picsum.photos/800/400?random=3",
+    "createdAt": "2025-11-18T09:45:00Z",
+    "isPublished": true,
+    "likeCount": 57,
+    "categoryName": "Société"
+  },
+  {
+    "id": 4,
+    "title": "Vaccination grippe 2025 : un baton dans les roues de la confiance ?",
+    "content": "La campagne de vaccination contre la grippe de novembre 2025 suscite des réactions contrastées. Les autorités sanitaires recommandent fortement la vaccination, tandis que certaines populations restent méfiantes en raison des polémiques passées.\n\nDes médecins insistent sur l’importance de la couverture vaccinale pour éviter un hiver compliqué, surtout après les vagues successives de maladies respiratoires. D’autres citoyens réclament plus de transparence et un meilleur accès aux centres de santé.",
+    "image": "https://picsum.photos/800/400?random=4",
+    "createdAt": "2025-11-20T11:10:00Z",
+    "isPublished": true,
+    "likeCount": 34,
+    "categoryName": "Santé"
+  },
+  {
+    "id": 5,
+    "title": "Nouvelles régulations sur les réseaux sociaux en Europe",
+    "content": "L’Union européenne a publié début novembre 2025 une série de mesures visant à encadrer les contenus sur les réseaux sociaux. L’objectif : lutter contre la désinformation, les discours haineux et la manipulation en ligne. Les plateformes auront désormais des obligations strictes de modération et de transparence.\n\nLes militants des libertés numériques s’inquiètent toutefois des risques de censure et de contrôle excessif. Pour eux, l’équilibre entre sécurité et liberté d’expression est fragile. Beaucoup redoutent des abus de pouvoir ou une régulation trop massive.",
+    "image": "https://picsum.photos/800/400?random=5",
+    "createdAt": "2025-11-10T16:00:00Z",
+    "isPublished": true,
+    "likeCount": 210,
+    "categoryName": "Politique"
+  },
+  {
+    "id": 6,
+    "title": "Succès d’un plan local de compostage à Bordeaux",
+    "content": "Depuis septembre 2025, Bordeaux a mis en place un programme de compostage collectif dans plusieurs quartiers. Résultat : 42 % des foyers concernés participent activement, réduisant considérablement les déchets organiques envoyés à l’incinération.\n\nLes promoteurs du projet y voient un modèle à reproduire dans d’autres villes. Pour eux, c’est un pas concret vers une économie circulaire et un mode de vie plus sobre. D’autres habitants s’interrogent sur la logistique et l’organisation à grande échelle.",
+    "image": "https://picsum.photos/800/400?random=6",
+    "createdAt": "2025-10-30T08:00:00Z",
+    "isPublished": true,
+    "likeCount": 76,
+    "categoryName": "Écologie"
+  },
+  {
+    "id": 7,
+    "title": "Nouvel accord commercial entre l’Afrique de l’Ouest et l’Union européenne",
+    "content": "Le 22 novembre 2025, un accord historique a été signé entre plusieurs pays d’Afrique de l’Ouest et l’Union européenne. L’objectif: favoriser les échanges, réduire les barrières douanières, et soutenir le développement économique.\n\nLes partisans y voient une opportunité de croissance, de création d’emplois, et d’amélioration des infrastructures. Mais des ONG alertent sur les risques de concurrence déloyale, de dépendance économique, ou d’aggravation des inégalités. Le débat est lancé sur les impacts à long terme.",
+    "image": "https://picsum.photos/800/400?random=7",
+    "createdAt": "2025-11-22T13:30:00Z",
+    "isPublished": true,
+    "likeCount": 149,
+    "categoryName": "International"
+  },
+  {
+    "id": 8,
+    "title": "Droits des femmes : une loi adoptée sur l’égalité salariale en France",
+    "content": "Le parlement français a approuvé une loi visant à renforcer l’égalité salariale entre les femmes et les hommes. À partir de 2026, les entreprises seront tenues de publier leurs écarts de rémunération, et de prendre des mesures correctives. \n\nDes syndicats saluent cette avancée, la qualifiant de pas concret vers l’équité. Mais certains employeurs regrettent une réglementation trop lourde, évoquant des risques pour l’emploi ou la compétitivité. Le débat sur la balance entre justice sociale et flexibilité économique s’intensifie.",
+    "image": "https://picsum.photos/800/400?random=8",
+    "createdAt": "2025-11-15T10:50:00Z",
+    "isPublished": true,
+    "likeCount": 193,
+    "categoryName": "Droits humains"
+  },
+  {
+    "id": 9,
+    "title": "Lycées français : vers une réforme des programmes en 2026",
+    "content": "Le ministère de l’Éducation a présenté en novembre 2025 un avant-projet de réforme des programmes de lycée. Les nouveaux enseignements proposent davantage de transversalité, plus d’éducation civique, et une ouverture sur les enjeux contemporains (environnement, numérique, citoyenneté).\n\nLes enseignants accueillent la réforme avec prudence : certains saluent l’approche moderne, d’autres craignent une surcharge de travail. Les parents, eux, s’interrogent sur l’impact réel sur la qualité de l’enseignement et sur l’avenir des filières traditionnelles.",
+    "image": "https://picsum.photos/800/400?random=9",
+    "createdAt": "2025-11-08T09:15:00Z",
+    "isPublished": true,
+    "likeCount": 64,
+    "categoryName": "Éducation"
+  },
+  {
+    "id": 10,
+    "title": "Explosion d’une usine de batteries : risques sanitaires et environnementaux",
+    "content": "Une explosion dans une usine de fabrication de batteries, près de Lyon, a soulevé de nombreuses inquiétudes quant aux risques chimiques et à la sécurité des travailleurs. Plusieurs employés ont été hospitalisés, et des dizaines ont été évacués. \n\nLes riverains dénoncent le manque de transparence et réclament des contrôles plus stricts. Les écologistes alertent sur les dangers potentiels pour l’environnement et demandent une sanction exemplaire pour l’entreprise responsable.",
+    "image": "https://picsum.photos/800/400?random=10",
+    "createdAt": "2025-11-21T07:40:00Z",
+    "isPublished": true,
+    "likeCount": 217,
+    "categoryName": "Santé"
+  },
+  {
+    "id": 11,
+    "title": "Festival « Voix du Monde » : la culture comme pont entre les peuples",
+    "content": "En novembre 2025, le festival “Voix du Monde” a réuni des artistes issus de 12 pays autour de performances musicales, théâtrales et visuelles. L’événement a mis en lumière la richesse des cultures et la force de la diversité. \n\nCertains y voient un symbole de tolérance et de partage. Mais d'autres estiment que ces initiatives restent trop élitistes, attirant un public déjà convaincu. Le vrai défi, selon eux, serait de rendre la culture accessible à tous, partout.",
+    "image": "https://picsum.photos/800/400?random=11",
+    "createdAt": "2025-11-25T19:00:00Z",
+    "isPublished": true,
+    "likeCount": 98,
+    "categoryName": "Culture"
+  },
+  {
+    "id": 12,
+    "title": "Énergie nucléaire : retour au débat après la hausse des prix du gaz",
+    "content": "À la faveur de la flambée des prix du gaz en Europe, le débat sur le rôle de l’énergie nucléaire est relancé. Certains experts estiment que le nucléaire offre une réponse fiable et bas-carbone. D’autres plaident pour les renouvelables, soulignant les risques liés aux déchets et à la sûreté. \n\nLes communautés locales sont divisées : certains saluent la perspective d’emplois et d’autonomie énergétique, tandis que d’autres redoutent un projet imposé sans réel consentement.",
+    "image": "https://picsum.photos/800/400?random=12",
+    "createdAt": "2025-11-09T13:45:00Z",
+    "isPublished": true,
+    "likeCount": 132,
+    "categoryName": "Écologie"
+  },
+  {
+    "id": 13,
+    "title": "Lutte contre l’illettrisme : une initiative de quartier à Marseille",
+    "content": "Un collectif de citoyens à Marseille a lancé en octobre 2025 des ateliers gratuits d’alphabétisation pour adultes. Plusieurs dizaines de personnes, souvent issues de l’immigration ou de milieux défavorisés, ont déjà profité du programme. \n\nLes bénévoles y voient un moyen concret de favoriser l’inclusion sociale. Mais pour que l’initiative soit pérenne, ils réclament des soutiens institutionnels et un financement public. Le débat s’ouvre sur la responsabilité collective envers l’éducation de tous.",
+    "image": "https://picsum.photos/800/400?random=13",
+    "createdAt": "2025-11-02T10:25:00Z",
+    "isPublished": true,
+    "likeCount": 45,
+    "categoryName": "Éducation"
+  },
+  {
+    "id": 14,
+    "title": "Smartphones reconditionnés : solution durable ou greenwashing ?",
+    "content": "Avec l’essor du marché des téléphones reconditionnés, de plus en plus de consommateurs y voient une solution écologique et économique. Mais certains spécialistes dénoncent un manque de transparence sur la longévité réelle des appareils, et sur les conditions de remise en état.\n\nD’un côté, c’est un geste concret contre l’obsolescence programmée. De l’autre, c’est un business qui peut rester opaque. Le débat soulève des questions importantes sur la consommation responsable et les vraies économies d’énergie.",
+    "image": "https://picsum.photos/800/400?random=14",
+    "createdAt": "2025-11-14T15:05:00Z",
+    "isPublished": true,
+    "likeCount": 76,
+    "categoryName": "Technologie"
+  },
+  {
+    "id": 15,
+    "title": "Manifestations pour le climat : un élan jeunesse grandissant",
+    "content": "Début novembre 2025, des milliers de jeunes ont manifesté dans une vingtaine de villes françaises pour réclamer des mesures concrètes contre le changement climatique. L’appel d’un mouvement inter-associatif était clair : agir maintenant, pas dans dix ans. \n\nCertains médias évoquent un renouveau de l’engagement civique. D’autres critiquent le manque de propositions réalistes. Pour de nombreux participants, c’est avant tout un signal fort adressé aux décideurs politiques.",
+    "image": "https://picsum.photos/800/400?random=15",
+    "createdAt": "2025-11-03T18:30:00Z",
+    "isPublished": true,
+    "likeCount": 254,
+    "categoryName": "Climat"
+  },
+  {
+    "id": 16,
+    "title": "Crise énergétique : les régions face au spectre de la précarité",
+    "content": "Avec la montée des prix de l’énergie, plusieurs régions en France annoncent un recours accru aux aides sociales pour aider les ménages vulnérables. L’hiver s’annonce dur pour les familles à faibles revenus. \n\nLes associations réclament un plan national d’aide et des tarifs réglementés. Certaines collectivités locales envisagent des coupures de chauffage pour les “usages non essentiels”. Le débat évoque la solidarité, la dignité, et les responsabilités des pouvoirs publics.",
+    "image": "https://picsum.photos/800/400?random=16",
+    "createdAt": "2025-11-19T07:55:00Z",
+    "isPublished": true,
+    "likeCount": 118,
+    "categoryName": "Économie"
+  },
+  {
+    "id": 17,
+    "title": "Droits des réfugiés : les engagements internationaux remis en question",
+    "content": "Suite à un rapport publié en novembre 2025, plusieurs ONG alertent sur la détérioration des conditions d’accueil des réfugiés en Europe. Selon elles, les promesses d’intégration et de protection ne sont pas respectées dans de nombreux pays. \n\nCertains États invoquent des contraintes budgétaires ou des pressions migratoires. Les ONG dénoncent une détérioration des droits fondamentaux. Le débat s’ouvre sur la solidarité européenne, l’asile, et le respect des engagements internationaux.",
+    "image": "https://picsum.photos/800/400?random=17",
+    "createdAt": "2025-11-11T12:00:00Z",
+    "isPublished": true,
+    "likeCount": 166,
+    "categoryName": "Droits humains"
+  },
+  {
+    "id": 18,
+    "title": "Arte et streaming : la culture télévisuelle à l’heure du numérique",
+    "content": "La chaîne Arte a annoncé fin octobre 2025 un accord de diffusion avec plusieurs plateformes de streaming, pour rendre accessible certains documentaires et séries européennes. L’objectif : toucher un public plus jeune, et préserver la diversité culturelle dans l’ère numérique. \n\nPour certains, c’est une manière efficace de moderniser la culture sans en sacrifier l’essence. Pour d’autres, c’est le risque d’une dilution des identités nationales et d’un appauvrissement des contenus locaux. Le débat sur la mondialisation culturelle reprend.",
+    "image": "https://picsum.photos/800/400?random=18",
+    "createdAt": "2025-10-28T17:45:00Z",
+    "isPublished": true,
+    "likeCount": 82,
+    "categoryName": "Culture"
+  },
+  {
+    "id": 19,
+    "title": "Télétravail : vers un nouveau contrat social dans les entreprises françaises",
+    "content": "Depuis 2025, de plus en plus d’entreprises adoptent un modèle hybride combinant télétravail et présentiel. Les salariés y voient une meilleure qualité de vie, moins de trajets, et une plus grande flexibilité. Mais certains dirigeants craignent une perte de cohésion d’équipe et un affaiblissement de la culture d’entreprise. \n\nDes syndicats demandent des garanties : droit à la déconnexion, indemnités pour usage du domicile, ou réévaluation des conditions de travail. Le débat sur le télétravail interroge la nature même du contrat de travail à l’ère post-Covid.",
+    "image": "https://picsum.photos/800/400?random=19",
+    "createdAt": "2025-11-06T09:00:00Z",
+    "isPublished": true,
+    "likeCount": 137,
+    "categoryName": "Société"
+  },
+  {
+    "id": 20,
+    "title": "Sport et politique : les enjeux du Mondial 2026 en Amérique du Nord",
+    "content": "Le prochain Mondial de football, organisé en 2026 aux États-Unis, au Canada et au Mexique, suscite des débats bien au-delà du sport. Certains y voient une opportunité économique et diplomatique, d’autres dénoncent le coût social et environnemental d’un tel événement. \n\nLes défenseurs évoquent la création d’infrastructures, la visibilité internationale, et le renforcement des liens internationaux. Les critiques pointent le gaspillage, l’empreinte carbone, et les inégalités accrues causées par les prix des billets et l’hébergement.",
+    "image": "https://picsum.photos/800/400?random=20",
+    "createdAt": "2025-11-01T12:30:00Z",
+    "isPublished": false,
+    "likeCount": 23,
+    "categoryName": "International"
+  }
+]
+
 }

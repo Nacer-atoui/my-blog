@@ -1,0 +1,22 @@
+.title-about {
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 20px;
+    color: #2C5F7C;
+} 
+
+.under-title-about {
+    font-size: x-large;
+    margin-top: 5%;
+    color: #2C5F7C;
+}
+
+.p-about {
+    margin-top: 3%;
+}
+
+.content-about {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5%;
+}

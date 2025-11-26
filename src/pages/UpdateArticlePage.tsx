@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom"
 import type { Article } from "../components/ArticleThumbnail";
+import "./UpdateArticlePage.css";
 
 export default function UpdateArticlePage() {
     const { id } = useParams();
@@ -38,15 +39,20 @@ export default function UpdateArticlePage() {
     if (!article) return <p>Aucune donnée trouvée.</p>;
 
     return (
-        <form onSubmit={handleSubmit} className="form-update">
+        <>
+        <h2 className="title-edit">Modifier l'article</h2>
+        <form onSubmit={handleSubmit} className="form-update">    
             <input
+                className="input-edit"
                 name="title"
                 value={article.title}
                 onChange={(e) =>
                     setArticle({ ...article, title: e.target.value })
                 }
             />
-            <input
+            <textarea
+                className="input-edit"
+                id="content-edit"
                 name="content"
                 value={article.content}
                 onChange={(e) =>
@@ -54,13 +60,15 @@ export default function UpdateArticlePage() {
                 }
             />
             <input
+                className="input-edit"
                 name="image"
                 value={article.image}
                 onChange={(e) =>
                     setArticle({ ...article, image: e.target.value })
                 }
             />
-            <button type="submit" className="edit-btn">Editer l'article</button>
+            <button type="submit" className="edit-btn" id="btn-edit-page">Editer l'article</button>
         </form>
+        </>
     );
 }

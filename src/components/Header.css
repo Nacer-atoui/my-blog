@@ -22,7 +22,7 @@
 .onglets {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 2rem;
 }
 
 

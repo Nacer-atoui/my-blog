@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./ArticleCreatePage.css";
 
 export function ArticleCreatePage() {
-    const [newArticle, setNewArticle] = useState({ title: "", content: "", });
+    const [newArticle, setNewArticle] = useState({ title: "", content: "", image: "" });
     const [error, setError] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
     const navigate = useNavigate();
@@ -35,10 +36,14 @@ export function ArticleCreatePage() {
             .finally(() => setIsLoading(false));
     }
     return (
-        <form>
-            <input type="text" placeholder="Titre" value={newArticle.title} onChange={(e) => setNewArticle({ ...newArticle, title: e.target.value })} />
-            <textarea placeholder="Contenu" value={newArticle.content} onChange={(e) => setNewArticle({ ...newArticle, content: e.target.value })}></textarea>
-            <button onClick={handleSubmit} type="submit">Créer l'article</button>
+        <>
+        <h2 className="title-create">Créer un article</h2>
+        <form className="form-create">
+            <input className="input-create" type="text" placeholder="Titre" value={newArticle.title} onChange={(e) => setNewArticle({ ...newArticle, title: e.target.value })} />
+            <textarea className="input-create" id="area-create" placeholder="Contenu" value={newArticle.content} onChange={(e) => setNewArticle({ ...newArticle, content: e.target.value })}></textarea>
+            <input className="input-create" type="text" placeholder="URL de l'image" value={newArticle.image} onChange={(e) => setNewArticle({ ...newArticle, image: e.target.value })} />
+            <button className="create-btn" onClick={handleSubmit} type="submit">Créer l'article</button>
         </form>
+        </>
     )
 }

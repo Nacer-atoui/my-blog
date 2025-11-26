@@ -16,6 +16,7 @@ export function ArticleDetailPage() {
         fetch(`http://localhost:3001/articles/${id}`)
             .then(response => response.json())
             .then(data => setArticleD(data))
+            
     }, [id])
 
 
@@ -36,30 +37,32 @@ export function ArticleDetailPage() {
                 );
             })
     }
-    
+
     if (!articleD) {
         return "Article introuvable."
     }
 
-    
+
     function handleClick() {
         setNbLike(!nbLike);
     }
-    
+
     return (
-        <div className="article-card-detail">
+        <main className="article-card-detail">
+            <div className="content-detail">
             <h2 className='titleCard'>{articleD.title}</h2>
             <img className='img-article-detail' src={articleD.image} alt="toto" />
-            <p>{articleD.content}</p><br />
+            <p id="p-detail">{articleD.content}</p><br />
             {/* <p className='date'>{articleD.dateObj.toLocaleDateString()}</p> */}
-            <div className="btn-div">
-            <button className='like-btn' onClick={handleClick}>❤️{nbLike ? 1 : 0}</button>
-            <p></p>
-            <Link to={`/articles/${id}/edit`}>
-                <button className='edit-btn'>Editer l'article</button>
-            </Link>
-            <button onClick={deleteArticle} className="delete-btn">Supprimer</button>
             </div>
-        </div>
+            <div className="btn-div">
+                <button className='like-btn' onClick={handleClick}>❤️{nbLike ? 1 : 0}</button>
+                <p></p>
+                <Link to={`/articles/${id}/edit`}>
+                    <button className='edit-btn'>Editer l'article</button>
+                </Link>
+                <button onClick={deleteArticle} className="delete-btn">Supprimer</button>
+            </div>
+        </main>
     )
 }

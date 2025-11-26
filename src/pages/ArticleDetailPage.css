@@ -1,5 +1,4 @@
 .article-card-detail {
-    /* display: flex; */
     flex-direction: column;
     text-align: center;
     padding: 5%;
@@ -8,8 +7,16 @@
     border-radius: 20px;
 }
 
+.content-detail {
+    padding-bottom: 5%;
+}
+
+#p-detail {
+    text-align: left;
+}
+
 .img-article-detail {
-    width: 30%;
+    width: 50%;
     height: 30%;
     margin: 0 auto;
     padding: 5%;
@@ -27,7 +34,6 @@
     font-weight: 500;
     font-family: inherit;
     background-color: #2C5F7C;
-    /* cursor: pointer; */
     transition: border-color 0.25s;
     color: #fafafa;
     justify-content: center;
@@ -42,6 +48,8 @@
 }
 
 .btn-div {
+    margin: 0 auto;
+    height: max-content;
     display: flex;
     align-items: center;
 }

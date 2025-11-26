@@ -16,8 +16,7 @@ export function ArticleList() {
     }, [])
 
     const [searchTerm, setSearchTerm] = useState<string>("");
-    const articleFiltred = articleData.filter((articles: Article) => articles.title.includes(searchTerm) ||
-        articles.content.includes(searchTerm))
+    const articleFiltred = articleData.filter((articles: Article) => articles.title.includes(searchTerm))
 
     // if (isLoading) { return <p>Chargement...</p> } // Affichage lors du chargement
     // if (error) return <p>Erreur : {error}</p>; // Affichage si erreur

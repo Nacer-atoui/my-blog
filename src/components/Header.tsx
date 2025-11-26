@@ -13,7 +13,7 @@ export function Header() {
                 <nav className='onglets'>
                     <NavLink to="/" className='btnOnglet'>Accueil</NavLink>
                     <NavLink to="/articles" className='btnOnglet'>Articles</NavLink>
-                    <NavLink to="/articles/create" className="btnOnglet">Ajouter un article</NavLink>
+                    <NavLink to="/articles/create" className="btnOnglet">Ajouter</NavLink>
                     <NavLink to="/about" className='btnOnglet'>À propos</NavLink>
                     <NavLink to="/contact" className='btnOnglet'>Contact</NavLink>
                 </nav>

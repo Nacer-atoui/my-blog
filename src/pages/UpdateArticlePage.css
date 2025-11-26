@@ -1,0 +1,37 @@
+.form-update {
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 5%;
+    box-shadow: #7BA8A3 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    background-color: #E8EEF2;
+}
+
+.input-edit {
+    margin: 0 auto;
+    width: 50%;
+    height: 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid rgba(123, 168, 163);
+}
+
+.title-edit {
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 20px;
+    color: #2C5F7C;
+}
+
+#btn-edit-page {
+    margin-top: 50px;
+}
+
+#content-edit {
+    height:100px;
+}

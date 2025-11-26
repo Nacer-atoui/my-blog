@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export interface Article {
     id: number;
     title: string;
-    content: string;
+    content?: string;
     image: string;
     createdAt?: Date;
     isPublished?: boolean;
@@ -13,7 +13,7 @@ export interface Article {
     categoryName?: string;
 }
 
-export function ArticleThumbnail({ id, title, image, content }: Article) {
+export function ArticleThumbnail({ id, title, image }: Article) {
     const dateObj = new Date();
     const [nbLike, setNbLike] = useState(false);
 
@@ -31,7 +31,6 @@ export function ArticleThumbnail({ id, title, image, content }: Article) {
                     <Link to={`/articles/${id}`} className='articleLink'>
                     <h2 className='titleCard'>{title}</h2>
                     <img className='imgArticle' src={image} alt="" />
-                    <p>{content}</p><br />
                     </Link>
                     <p className='date'>{dateObj.toLocaleDateString()}</p>
                     <button className='like' onClick={handleClick}>❤️</button>
