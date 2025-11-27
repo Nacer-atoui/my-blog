@@ -3,8 +3,7 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: max-content;
-    padding-bottom: 5%;
+    height: 500px;
     margin: 0 auto;
     margin-top: 5%;
     box-shadow: #7BA8A3 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -21,21 +20,11 @@
     border: 2px solid rgba(123, 168, 163);
 }
 
-.title-create {
-    text-align: center;
-    font-size: xx-large;
-    margin-top: 20px;
-    color: #2C5F7C;
-}
-
-#area-create {
-    height: 100px;
-}
 
 .create-btn {
     width: max-content;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 3rem;
     border-radius: 8px;
     border: 1px solid transparent;
     padding: 0.6em 1.2em;

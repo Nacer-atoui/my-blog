@@ -1,0 +1,42 @@
+<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Définition du dégradé pour l'effet prisme -->
+  <defs>
+    <linearGradient id="prismeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2C5F7C;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7BA8A3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E8EEF2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Forme du prisme géométrique -->
+  <g>
+    <!-- Triangle principal du prisme -->
+    <path d="M 40 80 L 80 20 L 120 80 Z" 
+          fill="none" 
+          stroke="#FFFFFF" 
+          stroke-width="3" 
+          stroke-linejoin="miter"/>
+    
+    <!-- Rayon de lumière entrant -->
+    <line x1="10" y1="45" x2="40" y2="45" 
+          stroke="#FFFFFF" 
+          stroke-width="2.5" 
+          opacity="0.6"/>
+    
+    <!-- Rayons de lumière décomposés sortant du prisme -->
+    <line x1="120" y1="55" x2="150" y2="40" 
+          stroke="#FFFFFF" 
+          stroke-width="2" 
+          opacity="0.8"/>
+    <line x1="120" y1="60" x2="150" y2="55" 
+          stroke="#FFFFFF" 
+          stroke-width="2" 
+          opacity="0.8"/>
+    <line x1="120" y1="65" x2="150" y2="70" 
+          stroke="#FFFFFF" 
+          stroke-width="2" 
+          opacity="0.6"/>
+  </g>
+  
+
+</svg>

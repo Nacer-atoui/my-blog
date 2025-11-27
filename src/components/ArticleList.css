@@ -1,8 +1,8 @@
 .containList {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  margin-top: 50px;
 }
 
 .search {
@@ -21,7 +21,7 @@
 }
 
 .articleLink:hover {
-    text-decoration: none;
-    color: inherit;
-    display: block;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
