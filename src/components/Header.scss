@@ -37,12 +37,12 @@
   font-size: 1.8rem;
   color: black;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 885px) {
     display: block;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 885px) {
   .navBar {
     display: flex;
     flex-direction: column;
@@ -64,7 +64,7 @@
   justify-content: space-around;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 885px) {
     border-radius: 10px;
     flex-direction: column;
     width: 100%;
@@ -74,7 +74,7 @@
 
     &.show {
       display: flex;
-      
+      margin-bottom: 10%;
     }
   }
 
@@ -103,7 +103,7 @@
     background-color: #7BA8A3;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 885px) {
     flex-direction: column;
 
     li {

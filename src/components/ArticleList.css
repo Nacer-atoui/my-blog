@@ -5,7 +5,7 @@
   margin-top: 50px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 885px) {
   .containList {
     flex-direction: column;
     align-items: center;
@@ -13,8 +13,24 @@
   }
 }
 
+@media screen and (min-width: 885px) {
+  .containList {
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 885px) {
+  .search {
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+
 .search {
   margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
   height: 25px;
   width: 200px;
   padding: 5px;
@@ -24,7 +40,7 @@
   border: 1px solid #7BA8A3;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 885px) {
   .search {
     display: block;
     margin: 20px auto;

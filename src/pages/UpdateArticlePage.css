@@ -12,7 +12,7 @@
     background-color: #E8EEF2;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 885px) {
   .form-update {
     width: 25rem;
     height: max-content;
@@ -31,7 +31,7 @@
     border: 2px solid rgba(123, 168, 163);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 885px) {
   .input-edit {
     width: 15rem;
   }

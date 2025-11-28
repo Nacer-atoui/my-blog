@@ -11,7 +11,7 @@
     background-color: #E8EEF2;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 885px) {
   .form-contact {
     width: 25rem;
     height: max-content;

@@ -26,7 +26,7 @@ export function Header() {
                     <ul className={`navbar-list ${isMenuOpen ? 'show' : ''}`}>
                         <li><NavLink to="/" className='btnOnglet'>Accueil</NavLink></li>
                         <li><NavLink to="/articles" className='btnOnglet'>Articles</NavLink></li>
-                        <li><NavLink to="/articles/create" className="btnOnglet">Ajouter</NavLink></li>
+                        <li><NavLink to="/create" className="btnOnglet">Ajouter</NavLink></li>
                         <li><NavLink to="/about" className='btnOnglet'>À propos</NavLink></li>
                         <li><NavLink to="/contact" className='btnOnglet'>Contact</NavLink></li>
                     </ul>

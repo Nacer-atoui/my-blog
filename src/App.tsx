@@ -11,6 +11,7 @@ import { Header } from './components/Header.tsx'
 import { ArticleDetailPage } from './pages/ArticleDetailPage.tsx'
 import UpdateArticlePage from './pages/UpdateArticlePage.tsx'
 import { ArticleList } from './components/ArticleList.tsx'
+import Page404 from './pages/Page404.tsx'
 // import { Toaster } from 'sonner'
 
 
@@ -23,11 +24,12 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/articles" element={<ArticleList />} />
-        <Route path='/articles/create' element={<ArticleCreatePage />} />
+        <Route path='/create' element={<ArticleCreatePage />} />
         <Route path='/articles/:id/edit' element={<UpdateArticlePage />} />
         <Route path="/articles/:id" element={<ArticleDetailPage />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='*'  element={<Page404 />} />
       </Routes>
     </>
   )
