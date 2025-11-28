@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom"
 import type { Article } from "../components/ArticleThumbnail";
 import "./UpdateArticlePage.css";
+import { toast } from "sonner";
 
 // fonction qui permet de mettre à jour ou modifier un article
 export default function UpdateArticlePage() {
@@ -32,6 +33,7 @@ export default function UpdateArticlePage() {
         })
             .then((res) => {
                 if (!res.ok) throw new Error(`Erreur HTTP: ${res.status}`);
+                toast("Article modifié avec succès.")
                 navigate("/articles");
             })
 

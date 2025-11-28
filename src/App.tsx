@@ -12,7 +12,7 @@ import { ArticleDetailPage } from './pages/ArticleDetailPage.tsx'
 import UpdateArticlePage from './pages/UpdateArticlePage.tsx'
 import { ArticleList } from './components/ArticleList.tsx'
 import Page404 from './pages/Page404.tsx'
-// import { Toaster } from 'sonner'
+import { Toaster } from 'sonner'
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <Header />
-      {/* <Toaster /> */}
+      <Toaster />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/articles" element={<ArticleList />} />

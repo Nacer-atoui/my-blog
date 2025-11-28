@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import type { Article } from "../components/ArticleThumbnail";
 import "./ArticleDetailPage.css";
+import { toast } from "sonner";
 
 // fonction pour afficher l'article dans sa page individuellement
 export function ArticleDetailPage() {
@@ -28,6 +29,7 @@ export function ArticleDetailPage() {
                 if (!res.ok) {
                     throw new Error("Impossible de supprimer l’article");
                 }
+                toast("Article supprimé avec succès.")
                 navigate("/articles");
             })
             .catch((err) => {
