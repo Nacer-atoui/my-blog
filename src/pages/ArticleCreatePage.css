@@ -3,13 +3,23 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 500px;
+    height: max-content;
     margin: 0 auto;
+    padding-bottom: 45px;
     margin-top: 5%;
     box-shadow: #7BA8A3 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     background-color: #E8EEF2;
 }
 
+@media screen and (max-width: 768px) {
+  .form-create {
+    width: 25rem;
+    height: max-content;
+    padding-bottom: 3rem;
+    margin-bottom: 10rem;
+  }
+
+}
 .input-create {
     margin: 0 auto;
     width: 50%;
@@ -20,6 +30,11 @@
     border: 2px solid rgba(123, 168, 163);
 }
 
+@media screen and (max-width: 768px) {
+  .input-create {
+    width: 15rem;
+  }
+}
 
 .create-btn {
     width: max-content;
@@ -41,4 +56,11 @@
     color: #fafafa;
     background-color: #7BA8A3;
     cursor: pointer;
+}
+
+.title-create {
+    text-align: center;
+    font-size: xx-large;
+    color: #2C5F7C;
+    margin-top: 20px;
 }

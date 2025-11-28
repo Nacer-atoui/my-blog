@@ -15,11 +15,20 @@
     text-align: left;
 }
 
+.title-detail {
+    margin: 3rem;
+}
+
 .img-article-detail {
-    width: 30%;
-    height: 30%;
+    width: 50%;
     margin: 0 auto;
-    padding: 5%;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .img-article-detail {
+    width: 20rem;
+  }
 }
 
 .like-btn,

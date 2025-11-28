@@ -46,7 +46,7 @@ export function ArticleDetailPage() {
     return (
         <main className="article-card-detail">
             <div className="content-detail">
-                <h2 className='titleCard'>{articleD.title}</h2>
+                <h2 id="title-detail" className='titleCard'>{articleD.title}</h2>
                 <img className='img-article-detail' src={articleD.image} alt="toto" />
                 <p id="p-detail">{articleD.content}</p><br />
             </div>

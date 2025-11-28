@@ -49,17 +49,16 @@
 }
 
 .titleHome {
-  font-size: 5em;
+  font-size: 3rem;
   margin-bottom: 50px;
   color: #2C5F7C;
 }
 
 .homeDiv {
-  /* border: 1px solid black; */
   box-shadow: #7BA8A3 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   border-radius: 5px;
   background-color: #E8EEF2;
-  padding: 10px;
+  padding: 2rem;
 }
 
 .pHome{
@@ -69,6 +68,6 @@
 
 .underTitleHome {
   margin-bottom: 50px;
-  font-size: 2em;
+  font-size: 1.5rem;
   color: #1A1A1A;
 }

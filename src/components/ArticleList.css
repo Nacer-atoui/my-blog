@@ -5,6 +5,14 @@
   margin-top: 50px;
 }
 
+@media screen and (max-width: 768px) {
+  .containList {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .search {
   margin-top: 50px;
   height: 25px;
@@ -16,6 +24,13 @@
   border: 1px solid #7BA8A3;
 }
 
+@media screen and (max-width: 768px) {
+  .search {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
 .search:focus {
   outline: none;
 }
@@ -25,3 +40,5 @@
   color: inherit;
   display: block;
 }
+
+

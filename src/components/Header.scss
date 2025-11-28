@@ -1,0 +1,118 @@
+.logoPrisme {
+  height: 6em;
+  padding: 0;
+}
+
+.navBar {
+  width: 100vw;
+  height: max-content;
+  margin-left: calc(-50vw + 50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #2C5F7C;
+  background-color: #E8EEF2;
+  box-shadow: #7BA8A3 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.btnOnglet {
+  margin-right: 1rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #2C5F7C;
+  transition: border-color 0.25s;
+  color: #fafafa;
+}
+
+
+
+.navbar-burger {
+  cursor: pointer;
+  display: none;
+  font-size: 1.8rem;
+  color: black;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logoPrisme {
+    display: flex;
+    margin-left: 12.3rem;
+  }
+}
+
+.navbar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    border-radius: 10px;
+    flex-direction: column;
+    width: 100%;
+    background-color: #2C5F7C;
+    z-index: 1;
+    display: none;
+
+    &.show {
+      display: flex;
+      
+    }
+  }
+
+  li {
+    position: relative;
+
+    &:hover {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .btnOnglet {
+      color: white;
+      text-decoration: none;
+      
+
+      &:hover {
+        background-color: #7BA8A3;
+      }
+    }
+  }
+
+  .active {
+    color: #7BA8A3;
+    border-radius: 5px;
+    background-color: #7BA8A3;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    li {
+      padding: 0.5rem;
+      position: relative;
+
+      a {
+        padding: 0.3rem;
+      }
+    }
+  }
+}

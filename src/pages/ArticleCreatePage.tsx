@@ -41,9 +41,9 @@ export function ArticleCreatePage() {
         <>
             <h2 className="title-create">Créer un article</h2>
             <form className="form-create">
-                <input className="input-create" type="text" placeholder="Titre" value={newArticle.title} onChange={(e) => setNewArticle({ ...newArticle, title: e.target.value })} />
-                <textarea className="input-create" id="area-create" placeholder="Contenu" value={newArticle.content} onChange={(e) => setNewArticle({ ...newArticle, content: e.target.value })}></textarea>
-                <input className="input-create" type="text" placeholder="URL de l'image" value={newArticle.image} onChange={(e) => setNewArticle({ ...newArticle, image: e.target.value })} />
+                <input required className="input-create" type="text" placeholder="Titre" value={newArticle.title} onChange={(e) => setNewArticle({ ...newArticle, title: e.target.value })} />
+                <textarea required className="input-create" id="area-create" placeholder="Contenu" value={newArticle.content} onChange={(e) => setNewArticle({ ...newArticle, content: e.target.value })}></textarea>
+                <input required className="input-create" type="text" placeholder="URL de l'image" value={newArticle.image} onChange={(e) => setNewArticle({ ...newArticle, image: e.target.value })} />
                 <button className="create-btn" onClick={handleSubmit} type="submit">Créer l'article</button>
             </form>
         </>
