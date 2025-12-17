@@ -17,7 +17,7 @@ export default function UpdateArticlePage() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch(`http://localhost:3001/articles/${id}`)
+        fetch(`http://localhost:3000/articles/${id}`)
             .then((res) => res.json())
             .then((data) => setArticle(data))
     }, [id]);
@@ -26,7 +26,7 @@ export default function UpdateArticlePage() {
     function handleSubmit(e: any) {
         e.preventDefault();
 
-        fetch(`http://localhost:3001/articles/${id}`, {
+        fetch(`http://localhost:300/articles/${id}`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(article)

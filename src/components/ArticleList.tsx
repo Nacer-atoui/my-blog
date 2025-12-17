@@ -10,7 +10,7 @@ export function ArticleList() {
     const [articleData, setArticleData] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3001/articles")
+        fetch("http://localhost:3000/articles")
             .then(response => response.json())
             .then(data => setArticleData(data))
             .catch((err) => {

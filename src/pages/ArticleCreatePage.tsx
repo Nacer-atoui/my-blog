@@ -18,7 +18,7 @@ export function ArticleCreatePage() {
         event.preventDefault();
         setIsLoading(true);
         setError(null);
-        fetch("http://localhost:3001/articles", {
+        fetch("http://localhost:3000/articles", {
             method: "POST",
             body: JSON.stringify(newArticle),
             headers: {

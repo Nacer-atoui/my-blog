@@ -14,7 +14,7 @@ export function ArticleDetailPage() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch(`http://localhost:3001/articles/${id}`)
+        fetch(`http://localhost:3000/articles/${id}`)
             .then(response => response.json())
             .then(data => setArticleD(data))
 
@@ -22,7 +22,7 @@ export function ArticleDetailPage() {
 
     // fonction qui permet de supprimer l'article en question
     function deleteArticle() {
-        fetch(`http://localhost:3001/articles/${id}`, {
+        fetch(`http://localhost:3000/articles/${id}`, {
             method: "DELETE",
         })
             .then((res) => {
